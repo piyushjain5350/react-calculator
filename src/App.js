@@ -25,14 +25,9 @@ function App() {
       };
       return false;
     }
-    if(num1>='a' && num1<='z' || num1>='A'&& num1<='Z'){
+    if(num1>='a' && num1<='z' || num1>='A'&& num1<='Z' || num2>='a' && num2<='z' || num2>='A'&& num2<='Z'){
       setMessage("Error!");
-      setResultMessage('Num1 is not valid');
-      return false;
-    }
-    if(num2>='a' && num2<='z' || num2>='A'&& num2<='Z'){
-      setMessage("Error!");
-      setResultMessage('Num2 is not valid');
+      setResultMessage('Enter valid format');
       return false;
     }
     setMessage('Success!');
